@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rojomarvel"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/logoMarvel"
+        android:layout_width="297dp"
+        android:layout_height="231dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="27dp"
+        android:contentDescription="@string/logo"
+        app:srcCompat="@drawable/logomarvel"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/gorroSplash"
+        android:layout_width="57dp"
+        android:layout_height="93dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="71dp"
+        android:contentDescription="@string/gorro"
+        app:srcCompat="@drawable/gorro" />
+
+    <Button
+        android:id="@+id/botonNext"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="145dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="246dp"
+        android:text="@string/push"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/white" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/ironmanDer"
+        android:layout_width="132dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="237dp"
+        android:layout_marginEnd="-18dp"
+        android:src="@drawable/ironman"
+        tools:ignore="ImageContrastCheck" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/ironmanIzq"
+        android:layout_width="132dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-12dp"
+        android:layout_marginTop="237dp"
+        android:layout_marginEnd="240dp"
+        android:src="@drawable/ironman"
+        tools:ignore="ImageContrastCheck" />
+
+    <pl.droidsonroids.gif.GifImageButton
+        android:id="@+id/escudo"
+        style="?attr/materialButtonStyle"
+        android:layout_width="81dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/logoMarvel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="121dp"
+        android:background="@color/rojomarvel"
+        android:scaleType="fitXY"
+        android:src="@drawable/splashgif"
+        tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck" />
+
+</RelativeLayout>

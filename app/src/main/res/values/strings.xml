@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Happy NewYear</string>
+    <string name="feliz2022">FELIZ 2022</string>
+    <string name="seTuHerore">Espero que este año
+        logres convertirte en tu propio héroe</string>
+    <string name="push">PUSH</string>
+    <string name="logo">Logo</string>
+    <string name="spiderman">Spiderman</string>
+    <string name="gon">Gon</string>
+    <string name="gorro">gorro</string>
+</resources>
