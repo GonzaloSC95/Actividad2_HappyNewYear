@@ -9,11 +9,12 @@ import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView felizanio;
+    private RelativeLayout felizanio;
     private TextView tuHeroe;
     private ImageView spidey;
     private ImageView gon;
@@ -36,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void cambiarLetra() {
-        Typeface letra1 = Typeface.createFromAsset(getAssets(), "Comic Kings.ttf");
-        felizanio.setTypeface(letra1);
+        /*Typeface letra1 = Typeface.createFromAsset(getAssets(), "Comic Kings.ttf");
+        felizanio.setTypeface(letra1);*/
         ///////////////////////////////////////////
         Typeface letra2 = Typeface.createFromAsset(getAssets(), "DAYPBL__.TTF");
         tuHeroe.setTypeface(letra2);
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void initComponentes(){
-        felizanio = (TextView) findViewById(R.id.felizanio);
+        felizanio = (RelativeLayout) findViewById(R.id.felizanio);
         tuHeroe=(TextView) findViewById(R.id.seTuHeroe);
         spidey=(ImageView) findViewById(R.id.spidey);
         gon=(ImageView) findViewById(R.id.gonTitulo);
