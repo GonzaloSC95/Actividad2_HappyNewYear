@@ -4,6 +4,7 @@ import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -70,8 +71,8 @@ public class MainActivity extends AppCompatActivity {
         gon = (ImageView) findViewById(R.id.gonTitulo);
         gorro = (ImageView) findViewById(R.id.gorro);
         ///////////////////////////////////////////////////
-        feliz_anio_actual=(TextView) findViewById(R.id.feliz_anio_txt);
-        feliz_anio_actual.setText("FELIZ "+anioActual());
+        feliz_anio_actual = (TextView) findViewById(R.id.feliz_anio_txt);
+        feliz_anio_actual.setText("FELIZ " + anioActual());
     }
 
     public void setSonido() {
@@ -81,8 +82,16 @@ public class MainActivity extends AppCompatActivity {
 
     //////AÑO ACTUAL////////////////
     public String anioActual() {
+        String anioStr = "";
         Calendar anio = Calendar.getInstance();
-        String anioStr = String.valueOf(anio.get(Calendar.YEAR));
+        int diadelanio = anio.get(Calendar.DAY_OF_YEAR);
+        if (diadelanio >= 359) {
+            int anioNUM = anio.get(Calendar.YEAR) + 1;
+            anioStr = String.valueOf(anioNUM);
+        } else {
+            int anioNUM = anio.get(Calendar.YEAR);
+            anioStr = String.valueOf(anioNUM);
+        }
         return anioStr;
     }
 
